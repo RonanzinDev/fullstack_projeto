@@ -1,0 +1,41 @@
+version: '3'
+
+services:
+  front:
+    build: ./front
+    depends_on:
+      - back
+    volumes:
+      - .:/front
+    ports:
+      - "3000:3000"
+    container_name: front
+  
+  back:
+    build: ./server
+    depends_on:
+      - db
+    command: bash -c "uvicorn main:app --host 0.0.0.0 --reload --port 8000"
+    volumes:
+      - .:/back
+    container_name: back
+    ports:
+      - "8000:8000"
+
+  db:
+    image: mysql
+    restart: always
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: 'root'
+      MYSQL_DATABASE: 'webapp'
+      MYSQL_USER: 'root'
+      MYSQL_PASSWORD: 'root'
+    volumes:
+      - my-db:/var/lib/mysql
+
+volumes:
+  my-db:
+
+

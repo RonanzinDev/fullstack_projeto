@@ -1,0 +1,27 @@
+#container-login {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 100% !;
+}
+
+.container-form {
+    width: 400px;
+}
+
+#form-login {
+    background: #2F3136;
+    padding: 40px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    margin: 80px auto;
+}
+
+.btn-back {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-back:hover {
+    color: #fff;
+}

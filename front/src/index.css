@@ -1,0 +1,33 @@
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #202225 !important;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+#root {
+  color: #fff;
+}
+
+btn-style {
+    height: 60px;
+}
+
+.btn-git {
+  background: #3C435D !important;
+  margin-top: 20px;
+}
+
+.btn-git span {
+  margin-left: 10px;
+}

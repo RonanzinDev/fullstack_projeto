@@ -1,0 +1,16 @@
+{
+  "name": "gabriel",
+  "email": "a@gmail.com",
+  "cpf": "123",
+  "pis": "123",
+  "password": "123",
+  "address": {
+    "pais": "brasil",
+    "estado": "ES",
+    "municipio": "serra",
+    "cep": "1232",
+    "rua": "manoel",
+    "numero": 20,
+    "complemento": "abc"
+  }
+}
