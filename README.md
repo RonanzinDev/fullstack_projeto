@@ -2,25 +2,26 @@
 
 # Como Executar o projeto:
 
-## Configurand o banco(MySQL):
+## Configurando o banco(MySQL):
 
 **Requisito:**
 - Ter o [MySQL](https://www.mysql.com/downloads/) instalado em sua maquina
 
-Na pasta /server contem um arquivo chamado `.env.example` (eu sei que as credencias do github estão nele) que contem todas as configurações de banco e do github. Crie um arquivo `.env` dentro de /server e cole as configurações de `.env.example` dentro dele. Alteras as configurações do banco conforme as configurações da sua maquina.
+Na pasta /server contém um arquivo chamado `.env.example` (eu sei que as credenciais do github estão nele) que contém todas as configurações de banco e do github. Crie um arquivo `.env` dentro de /server e cole as configurações de `.env.example` dentro dele. Alterar as configurações do banco conforme as configurações da sua máquina.
 
 ## Rodando local:
 **Requisitos:**
 - Baixar e instalar o [Python](https://www.python.org/downloads/) (OBS: Recomendado a versão 3.10.8)
 - Baixar e instalar o [NodeJS](https://nodejs.org/en/) (OBS: Recomendado a versão 14.20)
 
-### Instando dependencias:
+### Instalando dependencias:
 **Server**: 
-Entre dentro a pasta /server e execute o comando `pip install -r requirements.py` para instalas os pacotes utilizados no projeto
+Entre dentro a pasta /server e execute o comando `pip install -r requirements.py` para instalar os pacotes utilizados no projeto.
 **Front**: Entre dentro da pasta /front e execute o comando `npm install`.
 
 ### Executando
-**Server:**: Para executar o server basta rodar o comando `uvicorn main:app` dentro da pasta /server .
+**Server:** Para executar o server basta rodar o comando `uvicorn main:app` dentro da pasta /server .
+<br>
 
 **Front**: Para executar o front basta rodar o comando `npm start` dentro da pasta /front
 
@@ -30,7 +31,7 @@ Entre dentro a pasta /server e execute o comando `pip install -r requirements.py
 **Requisto**:
 - Baixar e instalar o [Docker](https://www.docker.com/products/docker-desktop/)
 
-No projeto contem um arquivo `docker-compose.yml`, confirme se essa configuração do banco dentro do arquivo está igual ao seu `.env` dentro de /server:
+No projeto contém um arquivo `docker-compose.yml`, confirme se essa configuração do banco dentro do arquivo está igual ao seu `.env` dentro de /server:
 
 `docker-compose`
 ```js
@@ -48,7 +49,7 @@ DB=webapp
 ```
 
 ### Executando
-Para executar o projeto basta rodar o comando `docker compose up` no diretorio em que o `docker-compose.yml` se encontra.
+Para executar o projeto basta rodar o comando `docker compose up` no diretório em que o `docker-compose.yml` se encontra.
 
 ## Checklist do que foi feito
 
